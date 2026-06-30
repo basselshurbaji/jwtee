@@ -14,3 +14,6 @@ build/
 
 # Claude Code local state
 .claude/
+
+# Local tooling (icon generator) — not part of the shipped app
+tools/

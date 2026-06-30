@@ -88,12 +88,10 @@ struct ContentView: View {
         let inspection = TokenInspection(jwt: jwt)
         return ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                signatureBadge(for: jwt)
-                validityBadges(inspection)
-
                 if !inspection.highlights.isEmpty {
                     GroupBox("Claims") {
-                        VStack(alignment: .leading, spacing: 4) {
+                        VStack(alignment: .leading, spacing: 8) {
+                            validityBadges(inspection)
                             ForEach(inspection.highlights, id: \.label) { item in
                                 HStack(alignment: .top) {
                                     Text(item.label).bold().frame(width: 90, alignment: .leading)
@@ -108,9 +106,26 @@ struct ContentView: View {
 
                 GroupBox("Header") { monospaced(inspection.prettyHeader) }
                 GroupBox("Payload") { monospaced(inspection.prettyPayload) }
+                GroupBox("Signature") { signatureSection(for: jwt) }
             }
             .padding(8)
         }
+    }
+
+    private func signatureSection(for jwt: JWT) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            signatureBadge(for: jwt)
+            if !jwt.rawSignature.isEmpty {
+                Text("Encoded signature")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                Text(jwt.rawSignature)
+                    .font(.system(.body, design: .monospaced))
+                    .textSelection(.enabled)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     @ViewBuilder
