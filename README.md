@@ -4,7 +4,7 @@ A small native macOS app for looking inside JSON Web Tokens — decode them, rea
 the claims, and check the signature — without pasting your signing secret into a
 website you don't control.
 
-![JWTee decoding and verifying a token](docs/screenshot.png)
+![JWTee decoding and verifying a token](docs/preview.png)
 
 ## Why
 
