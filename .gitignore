@@ -15,9 +15,9 @@ build/
 # Claude Code local state
 .claude/
 
-# Local tooling (icon generator) — not part of the shipped app
-tools/
+# Local tooling: icon/screenshot generators — not part of the shipped app
+# (the dmg build script tools/make_dmg.sh stays tracked)
+tools/*.swift
 
-# Build output / packaged app
+# Xcode build output
 .build-xcode/
-dist/
