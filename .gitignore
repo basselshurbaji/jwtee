@@ -17,3 +17,7 @@ build/
 
 # Local tooling (icon generator) — not part of the shipped app
 tools/
+
+# Build output / packaged app
+.build-xcode/
+dist/
