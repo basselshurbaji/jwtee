@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1868AA000000000000000080 /* JWTCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868AA000000000000000030 /* JWTCore.framework */; };
+		1868AA000000000000000081 /* JWTCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1868AA000000000000000030 /* JWTCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1868AA000000000000000082 /* JWTCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868AA000000000000000030 /* JWTCore.framework */; };
+		1868AA0000000000000000A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1868AA0000000000000000A0 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1868AA000000000000000091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1868AA000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1868AA000000000000000040;
+			remoteInfo = JWTCore;
+		};
+		1868AA000000000000000093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1868AA000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1868AA000000000000000040;
+			remoteInfo = JWTCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1868AA000000000000000076 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1868AA000000000000000081 /* JWTCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1868AA0000000000000000A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1868AA000000000000000030 /* JWTCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWTCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1868AA000000000000000031 /* jwtee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jwtee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1868AA000000000000000032 /* jwteeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jwteeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1868AA000000000000000020 /* JWTCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {};
+			explicitFolders = ();
+			path = Sources/JWTCore;
+			sourceTree = "<group>";
+		};
+		1868AA000000000000000021 /* JWTeeApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {};
+			explicitFolders = ();
+			path = Sources/JWTeeApp;
+			sourceTree = "<group>";
+		};
+		1868AA000000000000000022 /* JWTCoreTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {};
+			explicitFolders = ();
+			path = Tests/JWTCoreTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1868AA000000000000000071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868AA000000000000000074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868AA000000000000000080 /* JWTCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868AA000000000000000078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868AA000000000000000082 /* JWTCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1868AA000000000000000010 = {
+			isa = PBXGroup;
+			children = (
+				1868AA000000000000000020 /* JWTCore */,
+				1868AA000000000000000021 /* JWTeeApp */,
+				1868AA000000000000000022 /* JWTCoreTests */,
+				1868AA0000000000000000A0 /* Assets.xcassets */,
+				1868AA000000000000000011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1868AA000000000000000011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1868AA000000000000000030 /* JWTCore.framework */,
+				1868AA000000000000000031 /* jwtee.app */,
+				1868AA000000000000000032 /* jwteeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1868AA000000000000000040 /* JWTCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868AA000000000000000051 /* Build configuration list for PBXNativeTarget "JWTCore" */;
+			buildPhases = (
+				1868AA000000000000000070 /* Sources */,
+				1868AA000000000000000071 /* Frameworks */,
+				1868AA000000000000000072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1868AA000000000000000020 /* JWTCore */,
+			);
+			name = JWTCore;
+			packageProductDependencies = (
+			);
+			productName = JWTCore;
+			productReference = 1868AA000000000000000030 /* JWTCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1868AA000000000000000041 /* jwtee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868AA000000000000000052 /* Build configuration list for PBXNativeTarget "jwtee" */;
+			buildPhases = (
+				1868AA000000000000000073 /* Sources */,
+				1868AA000000000000000074 /* Frameworks */,
+				1868AA000000000000000075 /* Resources */,
+				1868AA000000000000000076 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1868AA000000000000000090 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1868AA000000000000000021 /* JWTeeApp */,
+			);
+			name = jwtee;
+			packageProductDependencies = (
+			);
+			productName = jwtee;
+			productReference = 1868AA000000000000000031 /* jwtee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1868AA000000000000000042 /* jwteeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868AA000000000000000053 /* Build configuration list for PBXNativeTarget "jwteeTests" */;
+			buildPhases = (
+				1868AA000000000000000077 /* Sources */,
+				1868AA000000000000000078 /* Frameworks */,
+				1868AA000000000000000079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1868AA000000000000000092 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1868AA000000000000000022 /* JWTCoreTests */,
+			);
+			name = jwteeTests;
+			packageProductDependencies = (
+			);
+			productName = jwteeTests;
+			productReference = 1868AA000000000000000032 /* jwteeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1868AA000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					1868AA000000000000000040 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					1868AA000000000000000041 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					1868AA000000000000000042 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 1868AA000000000000000050 /* Build configuration list for PBXProject "jwtee" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1868AA000000000000000010;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1868AA000000000000000011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1868AA000000000000000040 /* JWTCore */,
+				1868AA000000000000000041 /* jwtee */,
+				1868AA000000000000000042 /* jwteeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1868AA000000000000000072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868AA000000000000000075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868AA0000000000000000A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868AA000000000000000079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1868AA000000000000000070 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868AA000000000000000073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868AA000000000000000077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1868AA000000000000000090 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1868AA000000000000000040 /* JWTCore */;
+			targetProxy = 1868AA000000000000000091 /* PBXContainerItemProxy */;
+		};
+		1868AA000000000000000092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1868AA000000000000000040 /* JWTCore */;
+			targetProxy = 1868AA000000000000000093 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1868AA000000000000000060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M3RTUYN4JW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1868AA000000000000000061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M3RTUYN4JW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1868AA000000000000000062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basselshurbaji.JWTCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		1868AA000000000000000063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basselshurbaji.JWTCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		1868AA000000000000000064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basselshurbaji.jwtee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		1868AA000000000000000065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basselshurbaji.jwtee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		1868AA000000000000000066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basselshurbaji.jwteeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		1868AA000000000000000067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basselshurbaji.jwteeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1868AA000000000000000050 /* Build configuration list for PBXProject "jwtee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868AA000000000000000060 /* Debug */,
+				1868AA000000000000000061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1868AA000000000000000051 /* Build configuration list for PBXNativeTarget "JWTCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868AA000000000000000062 /* Debug */,
+				1868AA000000000000000063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1868AA000000000000000052 /* Build configuration list for PBXNativeTarget "jwtee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868AA000000000000000064 /* Debug */,
+				1868AA000000000000000065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1868AA000000000000000053 /* Build configuration list for PBXNativeTarget "jwteeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868AA000000000000000066 /* Debug */,
+				1868AA000000000000000067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1868AA000000000000000001 /* Project object */;
+}

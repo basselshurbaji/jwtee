@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+**/xcuserdata/
+
+# Claude Code local state
+.claude/
