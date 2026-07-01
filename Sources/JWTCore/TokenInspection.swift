@@ -39,16 +39,24 @@ public struct TokenInspection: Equatable, Sendable {
         add("Issuer", jwt.issuer)
         add("Subject", jwt.subject)
         if !jwt.audience.isEmpty { add("Audience", jwt.audience.joined(separator: ", ")) }
-        add("Issued at", jwt.issuedAt.map(TokenInspection.format))
-        add("Not before", jwt.notBefore.map(TokenInspection.format))
-        add("Expires at", jwt.expiresAt.map(TokenInspection.format))
+        add("Issued at", jwt.issuedAt.map { TokenInspection.format($0, now: now) })
+        add("Not before", jwt.notBefore.map { TokenInspection.format($0, now: now) })
+        add("Expires at", jwt.expiresAt.map { TokenInspection.format($0, now: now) })
         self.highlights = highlights
     }
 
-    private static func format(_ date: Date) -> String {
-        let formatter = ISO8601DateFormatter()
-        formatter.timeZone = TimeZone(identifier: "UTC")
-        return formatter.string(from: date)
+    /// Formats a claim timestamp in the viewer's *local* time, followed by a
+    /// relative phrase (e.g. "in 8 years" / "3 months ago"). The raw epoch /
+    /// UTC value is always available in the payload JSON.
+    private static func format(_ date: Date, now: Date) -> String {
+        let absolute = DateFormatter()
+        absolute.dateStyle = .medium
+        absolute.timeStyle = .short // uses the current locale + local time zone
+
+        let relative = RelativeDateTimeFormatter()
+        relative.unitsStyle = .full
+
+        return "\(absolute.string(from: date)) (\(relative.localizedString(for: date, relativeTo: now)))"
     }
 
     /// Pretty-prints a decoded claims object with sorted, indented keys.
