@@ -1,0 +1,12 @@
+#!/bin/bash
+# Rebuild the packaged .dmg before pushing, so packaging never silently breaks.
+# Enable with: make hooks   (sets core.hooksPath to .githooks)
+#
+# Note: git fixes the refs being pushed before this runs, so a dmg rebuilt here
+# is NOT part of the in-flight push — commit it separately if it changed.
+set -euo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+
+echo "pre-push: make dmg"
+make dmg
