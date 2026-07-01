@@ -1,0 +1,13 @@
+#!/bin/bash
+# Rebuild dist/JWTee.dmg and stage it, so every commit includes an up-to-date
+# packaged app. Enable with: make hooks  (sets core.hooksPath to .githooks)
+#
+# Note: this runs a Release build on every commit, and the .dmg is not
+# byte-reproducible, so each commit will carry a fresh dmg blob.
+set -euo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+
+echo "pre-commit: make dmg"
+make dmg
+git add dist/JWTee.dmg
